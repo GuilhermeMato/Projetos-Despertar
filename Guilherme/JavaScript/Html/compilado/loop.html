@@ -1,0 +1,32 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+
+    <title>Atividade com Loop For</title>
+</head>
+
+<body>
+    <h1>Lista de Números</h1>
+    <ul id="numberList"></ul>
+    <script>
+        // Número de itens na lista
+        const itemCount = 700;
+        // Elemento <ul> onde a lista será exibida
+        const numberList = document.getElementById("numberList");
+        // Loop for para criar a lista de números
+        for (let i = 1; i <= itemCount; i++) {
+            // Crie um elemento <li> para cada número
+            const listItem = document.createElement("li");
+            listItem.textContent = "Número " + i;
+            // Adicione o <li> à <ul>
+            numberList.appendChild(listItem);
+        }
+    </script>
+
+</body>
+
+</html>
