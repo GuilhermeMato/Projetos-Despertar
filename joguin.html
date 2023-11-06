@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Jogo de Adivinhação</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        #output {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        #guess {
+            font-size: 18px;
+        }
+
+        button {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Jogo de Adivinhação</h1>
+        <p>Adivinhe o número entre 1 e 10:</p>
+        <input type="number" id="guess" min="1" max="10">
+        <button onclick="checkGuess()">Adivinhar</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        var secretNumber = Math.floor(Math.random() * 10) + 1;
+        var attempts = 3;
+
+        function checkGuess() {
+            var guess = parseInt(document.getElementById("guess").value);
+            var output = document.getElementById("output");
+
+            if (guess === secretNumber) {
+                output.innerHTML = "Parabéns! Você acertou o número!";
+                output.style.color = "green";
+                document.getElementById("guess").disabled = true;
+            } else {
+                attempts--;
+                if (attempts === 0) {
+                    output.innerHTML = "Suas tentativas acabaram. O número era " + secretNumber + ".";
+                    output.style.color = "red";
+                    document.getElementById("guess").disabled = true;
+                } else if (guess < secretNumber) {
+                    output.innerHTML = "Tente novamente. Dica: o número é maior. Tentativas restantes: " + attempts;
+                    output.style.color = "orange";
+                } else {
+                    output.innerHTML = "Tente novamente. Dica: o número é menor. Tentativas restantes: " + attempts;
+                    output.style.color = "orange";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
