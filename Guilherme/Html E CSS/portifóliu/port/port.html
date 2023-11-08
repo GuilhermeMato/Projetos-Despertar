@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -13,110 +13,131 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <title>Portfolio Despertar</title>
 </head>
 
 <body>
+    <div class="background" id="Inicio">
 
-
-    <div class="background">
         <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2>
+            <h2 class="logo">Portfolio</h2>
             <ul class="cabeçalho-link">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#SobreMim">Sobre mim</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Qualidades">Qualidades</a></li>
+                <li><a href="#Contatos">Contato</a></li>
             </ul>
-            <a href="#" class="btn">Subscribe</a>
         </nav>
 
         <div class="Main">
             <h4>Ola, meu nome é</h4>
-            <h1>Guilherme <span>Fereira</span></h1>
-            <h3>Eu sou um desenvolvedor web</h3>
-            <div class="Container-btn">
-                <form>
-                    <input type="email" nome="email" id="mail" placeholder="Envie seu Email">
-                    <input type="submit" name="submit" value="Começar">
-                </form>
-            </div>
+            <h1>Guilherme <span>Ferreira</span></h1>
+            <h3>Esse é meu portfolio</h3>
         </div>
     </div>
 
-
-
-    <section class="background-color-Sobre">
+    <section class="background-color-Sobre" id="SobreMim">
         <div class="main-sobre">
-            <img src="main-img.png">
+            <img src="" id="IMGP">
             <div class="Text-sobre">
-                <h2>Sobre-Mim</h2>
-                <h5>Desenvolvedor <span>& designer</span></h5>
-                <p>Eu sou um Desenvolvedor web front-end. Eu posso fornecer codigos limpos e imagem de desing perfeito.
-                    E também fazer o website mais & mais interativo e com animação web. E posso Deixar seu site
-                    responsivo, e que ele acesse todos os usuarios, independente dos seus aparelhos dispositivos.</p>
-                <button type="button">Vamos conversa</button>
+                <h2>Sobre-mim</h2>
+                <h5><span>Desenvolvedor Full-Stack</span></h5>
+                <p>Eu sou um Desenvolvedor web front-end e back-end, consigo desenvolver sites e aplicações. Tenho 17
+                    anos fiz o curso da despertar (Programação web) sou bom em solucionar problemas. </p>
             </div>
         </div>
     </section>
 
-
-    <div class="Container-serviços">
+    <div class="Container-serviços" id="Projetos">
         <div class="title">
-            <h2>Nossos Serviços</h2>
+            <h2>Meus Projetos</h2>
         </div>
 
         <div class="Caixa">
             <div class="Card">
-                <i class="fas fa-bars"></i>
-                <h5>Portifólio Despertar</h5>
+                <i class="fas fa-shopping-bag"></i>
+                <h5>Portfolio Despertar</h5>
                 <div class="Paragrafo-button">
-                    <p>Muitos sites devem ser contruido com dois principais objetivos: Primeiramente , ele precisar
-                        funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
-                    <button type="button">Ler Mais</button>
+                    <p>Nesse projeto eu e meu grupo ficamos responsavel de criar um portfolio para alguns membros da
+                        Despertar.</p>
                 </div>
             </div>
 
             <div class="Card">
-                <i class="fas fa-user"></i>
-                <h5>Desenvolvedor web</h5>
+                <i class="fas fa-shopping-bag"></i>
+                <h5>Spotify FNAF</h5>
                 <div class="Paragrafo-button">
                     <p>Muitos sites devem ser contruido com dois principais objetivos: Primeiramente , ele precisar
-                        funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
-                    <button type="button">Ler Mais</button>
+                        funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel x'</p>
                 </div>
             </div>
 
             <div class="Card">
-                <i class="fas fa-bell"></i>
-                <h5>Desenvolvedor web</h5>
+                <i class="fas fa-shopping-bag"></i>
+                <h5>Aplicações Back-End</h5>
                 <div class="Paragrafo-button">
                     <p>Muitos sites devem ser contruido com dois principais objetivos: Primeiramente , ele precisar
                         funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
-                    <button type="button">Ler Mais</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="me-contate">
-        <p>Contate minha equipe para a gente criar um bonito site para você</p>
-        <button type="button">Enviar mensagem</button><!--button-->
-    </div><!--me-contate-->
+    <div class="me-contate" id="Qualidades">
+        <h2>Qualidades:</h2>
+        <div class="qualidades-lista">
+            <div class="qualidades-row">
+                <div class="qualidade">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Responsável</span>
+                </div>
+                <div class="qualidade">
+                    <i class="fas fa-trophy"></i>
+                    <span>Determinado</span>
+                </div>
+            </div>
+            <div class="qualidades-row">
+                <div class="qualidade">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Criativo</span>
+                </div>
+                <div class="qualidade">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Colaborativo</span>
+                </div>
+            </div>
+            <div class="qualidades-row">
+                <div class="qualidade">
+                    <i class="fas fa-comments"></i>
+                    <span>Comunicativo</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <footer>
-        <h6>Guilherme Ferreira</h6>
-        <p>Para mais HTML E CSS, tutorias - por favor clique no link abaixo para se inscrever no meu canal</p>
+    <footer id="Contatos">
+        <h6>Redes Sociais</h6>
+        <p>Guilherme Ferreira Matos</p>
         <div class="Redes-sociais">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-dribbble"></i></a>
-        </div><!--Redes-sociais-->
-        <p class="end">CopyRight By Tahmid Ahmed</p>
+            <a href="#"><i class="far fa-envelope"></i></a>
+        </div>
+        <p class="end">CopyRight By Despertar Web</p>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="port.js"></script>
 </body>
 
 </html>
+
+
+evelin
+emily
+bianca

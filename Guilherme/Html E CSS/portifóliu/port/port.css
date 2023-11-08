@@ -1,27 +1,56 @@
-* {
+:root {
+    --Cor2: rgb(208, 153, 15);
+}
+
+*{
     padding: 0;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.8);
 }
 
+#IMGP {
+    border-radius: 10px;
+}
 
 .background {
-    background-image: url(https://extremescripter.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F477b5961-dbd8-4ac7-97a1-1f79c17a25fb%2Fb17c6509-8774-43d0-b673-968e100dae42%2Fv1016-b-09.jpg?table=block&id=d11d6e13-fbea-4b79-a57d-1af230b09a6e&spaceId=477b5961-dbd8-4ac7-97a1-1f79c17a25fb&width=2000&userId=&cache=v2);
-    background-size: cover;
-    background-position: center;
+    background-image: url(Fundo.jpg);
+    image-rendering: optimizeQuality;
+    background-color: #101010;
     height: 100vh;
     width: 100%;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
 
+body {
+    background-color: #191919;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 45px;
+    padding: 15px;
     padding-left: 8%;
     padding-right: 8%;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 100%;
+    margin: auto;
 }
 
 .logo {
@@ -29,16 +58,20 @@ nav {
     font-size: 35px;
     cursor: pointer;
     letter-spacing: 1px;
+    user-select: none;
+    padding-top: 20px;
+    user-select: none;
+    pointer-events: none;
 }
 
-span {
-    color: #f9004d;
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 nav ul li {
     list-style-type: none;
-    display: inline-block;
-    padding: 10px 25px;
 }
 
 nav ul li a {
@@ -46,15 +79,18 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
-    color: #f9004d;
+    color: var(--Cor2);
     transform: .4s;
 }
-
-.btn {
-    background-color: #f9004d;
+span{
+    color: var(--Cor2);
+}
+.btn{
+    background-color: var(--Cor2);
     color: #fff;
     text-decoration: none;
     border: 2px solid transparent;
@@ -64,101 +100,97 @@ nav ul li a:hover {
     transition: transform .4s;
 }
 
-.btn:hover {
-    transform: scale(1.2);
-}
-
-.Main {
+.Main{
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
 }
 
-.Main span {
-    color: #f9004d;
+.Main span{
+    color: var(--Cor2)
 }
 
-h1 {
+h1{
     color: #fff;
     margin: 20px 0px 20px;
     font-size: 75px;
 }
 
-h4 {
-    color: #fcfc;
+h4{
+    color: white;
     letter-spacing: 2px;
     font-size: 20px;
 }
 
-h3 {
+h3{
     color: #fff;
     font-size: 25px;
     margin-bottom: 50px;
 }
 
-.Container-btn form {
+.Container-btn form{
     width: 380px;
     max-width: 100%;
     position: relative;
 }
 
-.Container-btn form input:first-child {
+.Container-btn form input:first-child{
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
+    border: 2px solid var(--Cor2);
     border-radius: 30px;
     outline: none;
 }
 
-.Container-btn form input:last-child {
+.Container-btn form input:last-child{
     position: absolute;
     display: inline-block;
     outline: none;
     border: none;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: #f9004d;
+    background-color: var(--Cor2);
     color: #fff;
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
     right: 6px;
     top: 6px;
-
+    
 }
 
-.background-color-Sobre {
+.background-color-Sobre{
     background-color: #191919;
     width: 100%;
     padding: 100px 0px;
-
+    
 }
 
-.background-color-Sobre img {
+.background-color-Sobre img{
     width: 430px;
     height: auto;
 }
 
-.Text-sobre {
+.Text-sobre{
     width: 550px;
+  }
+
+.main-sobre{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 1130px;
+   margin: 0 auto;
 }
 
-.main-sobre {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 1130px;
-    margin: 0 auto;
-}
-
-.Text-sobre h2 {
+.Text-sobre h2{
     color: #fff;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 
-.Text-sobre h5 {
+.Text-sobre h5{
     color: #fff;
     letter-spacing: 2px;
     font-size: 22px;
@@ -166,16 +198,16 @@ h3 {
     text-transform: capitalize;
 }
 
-.Text-sobre p {
-    color: #fcfc;
+.Text-sobre p{
+    color: white;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
 }
 
-button {
-    background-color: #f9004d;
+button{
+    background-color: var(--Cor2);
     color: #fff;
     text-transform: none;
     border: 2px solid transparent;
@@ -183,22 +215,22 @@ button {
     padding: 13px 20px;
     border-radius: 30px;
     transition: .4s;
-
+    
 }
 
-button:hover {
+button:hover{
     background-color: transparent;
-    border: 2px solid #f9004d;
+    border: 2px solid var(--Cor2);
     cursor: pointer;
 }
 
-.Container-serviços {
+.Container-serviços{
     background-color: #101010;
     width: 100%;
     padding: 100px 0px;
 }
 
-.title h2 {
+.title h2{
     color: #fff;
     font-size: 75px;
     width: 1130px;
@@ -206,7 +238,7 @@ button:hover {
     text-align: center;
 }
 
-.Caixa {
+.Caixa{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +246,7 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.Card {
+.Card{
     background: #191919;
     height: 365px;
     width: 335px;
@@ -222,66 +254,104 @@ button:hover {
     margin: 15px;
     position: relative;
     overflow: hidden;
-    text-align: center;
-
+    text-align:  center;
+    
 }
 
-.Card i {
+.Card i{
     font-size: 50px;
     display: block;
     text-align: center;
     margin: 25px 0px;
-    color: #f9004d;
+    color: var(--Cor2);
 }
 
-h5 {
+h5{
     color: #fff;
     font-size: 23px;
     margin-bottom: 15px;
 }
 
-.Paragrafo-button {
-    color: #fcfc;
+.Paragrafo-button{
+    color: white;
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
 
-.Paragrafo-button button {
+.Paragrafo-button button{
     margin-top: 25px;
 }
 
+.me-contate h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-align: center;
+}
 .me-contate {
     width: 100%;
-    height: 290px;
+    height: 400px;
     background-color: #191919;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px 0;
 }
 
-.me-contate p {
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 25px;
+.qualidades-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.qualidades-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.qualidade {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border: 2px solid var(--Cor2);
+    border-radius: 20px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.qualidade i {
+    margin-right: 8px;
+}
+
+.qualidade span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    user-select: none;
+}
+
 
 footer {
-    position: relative;
     width: 100%;
-    height: 400px;
+    height: 200px;
     background-color: #101010;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 footer h6 {
     font-size: 35px;
     color: #fff;
+    padding-top: 40px;
 }
 
 footer p {
@@ -292,20 +362,26 @@ footer p {
     margin-top: 15px;
     letter-spacing: 1px;
     line-height: 23px;
+    margin: 2px;
 }
 
 .Redes-sociais {
     display: flex;
-
+    
+    padding-bottom: 45px;
+    background-color: #101010;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .Redes-sociais a {
-    background-color: #f9004d;
+    background-color: var(--Cor2);
     width: 45px;
     height: 45px;
     padding: 15px;
     border-radius: 50%;
-    margin: 22px 10px;
+    margin: 8px 8px;
     color: #fff;
     text-decoration: none;
     font-size: 20px;
@@ -315,14 +391,58 @@ footer p {
     flex-direction: row;
 }
 
-.Redes-sociais a:hover {
-    transform: scale(1.2);
-    transition: .3s;
-}
-
 .end {
     position: absolute;
-    color: #f9004d;
-    bottom: 35px;
-    font-size: 14px;
+    color: #1f6ba1;
+    bottom: 0px;
+    font-size: 14px ;
+    margin-top: 20px;
+}
+
+.btn, button, .Card {
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.btn, button, nav ul li a {
+    transition: all 0.3s ease;
+}
+
+.Caixa, .main-sobre, .Container-serviços {
+    gap: 30px;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 15px;
+   
+}
+
+h1, h2, h3, h4, h5, p {
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover, button:hover, .qualidade:hover {
+    color: var(--Cor2);
+}
+
+.Card, #IMGP, .cabeçalho-link li, .qualidade, .Redes-sociais a, .btn{
+    transition: all 0.3s ease;
+}
+
+.Card:hover, #IMGP:hover, .cabeçalho-link li:hover, .qualidade:hover, .Redes-sociais a:hover, .btn:hover {
+    transform: scale(1.1);
 }
