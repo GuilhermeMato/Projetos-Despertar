@@ -1,5 +1,5 @@
 :root {
-    --Cor2: rgb(22, 165, 226);
+    --Cor2: rgb(145, 85, 178);
 }
 
 *{
@@ -15,7 +15,7 @@
 }
 
 .background {
-    background-image: url('https://raw.githubusercontent.com/ErickHiroshi/Projetos/main/Scripts/Portf%C3%B3lio/Fundos/FundoAzul.png');
+    background-image: url('https://raw.githubusercontent.com/ErickHiroshi/Projetos/main/Scripts/Portf%C3%B3lio/Fundos/FundoRoxo.png');
     image-rendering: optimizeQuality;
     background-color: #101010;
     height: 100vh;
